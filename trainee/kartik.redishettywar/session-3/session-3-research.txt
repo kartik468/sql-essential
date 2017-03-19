@@ -1,0 +1,55 @@
+1.	What are different types of joins?
+	Following type of joins present in SQL server.
+
+	- Inner join
+	When we join two tables with inner join then it returns the records that match in both the tables.
+	eg. 
+		Select * from table_1 as t1
+		inner join table_2 as t2
+		on t1.IDcol=t2.IDcol 
+
+	- Left join
+	When we join two tables with left join then it returns all the records from the left table and matched records from the right table. Right table return NULL when it dose not match.
+	eg.
+		Select * from table_1 as t1
+		left outer join table_2 as t2
+		on t1.IDcol=t2.IDcol 
+
+	- Right join
+	When we join two tables with right join then it returns all the records from the right table and matched records from the left table. Left table return NULL when it dose not match.
+	eg.
+		Select * from table_1 as t1
+		right outer join table_2 as t2
+		on t1.IDcol=t2.IDcol 
+
+	- Full join
+	When we join two tables with full join then it returns all the records from both the tables. It returns null where no matching present.
+	eg.
+		Select * from table_1 as t1
+		full outer join table_2 as t2
+		on t1.IDcol=t2.IDcol 
+
+	- Cross join
+	When we join two tables with full join then it returns cartesian product of both the tables. This join dose not need joining condition as it returns cartesian product of tables.
+	eg. 
+		Select * from table_1
+		cross join table_2 
+
+2.	What are sub-queries? Which sub-query is called co-related sub-query?
+	If a query is nested within the query then it is called as sub-query. If a sub-query is not idependant of outer query means it depends on outer query then such query is called as co-related sub-query.
+
+	eg.
+	select * 
+	from Employees
+	where EmployeeId in (select EmployeeId from EmployeeDepartment)
+
+	eg
+	select *
+	from Employees EM
+	where EmpId in (
+		select EmployeeId from EmployeeDepartment ED
+		where ED.EmployeeId = EM.EmployeeId
+	)
+
+3.	Compare Sub-queries and Joins
+	Theoretically joins will work faster but practically it depends on the execution plan generated for by SQL server.

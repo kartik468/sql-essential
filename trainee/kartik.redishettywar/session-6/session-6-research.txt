@@ -1,0 +1,4 @@
+1.	Compare DELETE and TRUNCATE
+- Both are used for deleting records from table. With delete we can specify where clause. DELETE is DML command whereas TRUNCATE AND DROP ARE DDL commands. 
+- So DELETE operation can be rolled back while DROP and TRUNCATE operations cannot be rolled back.
+- In case of DELETE trigger get fired.

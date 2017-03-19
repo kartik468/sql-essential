@@ -1,0 +1,11 @@
+1.	What are transactions? Why are they used? 
+	Transaction is group of sql statements executed together as a single sql statement. If transaction is commited then it is permanently saved to database and if it is rollbacked then they are not saved.
+
+	When a transaction is initiated it locks all the tables data that are used in the transaction. Hence during transaction life cycle no one can modify these tables' data that are used by the transaction. The reason behind the locking of the data is to maintain Data Integrity.
+
+2.	Which statements are required for executing transactions?
+
+	BEGIN TRAN / BEGIN TRANSACTION - to initiate transaction
+	ROLLBACK TRAN / ROLLBACK TRANSACTION - to rollback transaction
+	COMMIT TRAN / COMMIT TRANSACTION - to commit transaction
+

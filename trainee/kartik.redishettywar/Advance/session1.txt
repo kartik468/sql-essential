@@ -1,0 +1,26 @@
+1.	What is difference between temporary tables, table variables and TVP?
+
+	Temporary tables: There are two types of temporary tables in sql server.
+	- Local Temp table
+	- Global Temp table
+
+	Local Temp Table- These tables are only available in the current session and destroyed on the session close. These tables name start with hast (#) sign.
+
+	Global Temp Table- These tables are available to all the sessions and destroyed when all the sessions are closed. These tables name start with double hash (##) sign.
+
+	These tables can also be deleted explicitly.
+
+	Temporary tables gets created in tempdb database.(on disk)
+	Databases -> System Databases -> tempdb -> Temporary Tables
+
+	-- select COUNT(*) from tempdb..sysobjects
+
+
+Table Variables vs Temporary Tables
+	- Scope of Table variables is stored procedure. So we can not use it in dynamic query. In order to use Table variables in dynamic query you must declare it inside dynamic query itself.
+	- You can not create non-clustered index on a table variable.
+	- You can not change table variable definition after declaration.
+	
+
+
+

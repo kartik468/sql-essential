@@ -1,0 +1,86 @@
+1. List all the STRING functions & their usage in tabular form
+
+ASCII()					Returns numeric value of left-most character
+BIT_LENGTH()			Returns length of argument in bits
+CHAR_LENGTH()			Returns number of characters in argument
+CHAR()					Returns the character for each integer passed
+CHARACTER_LENGTH()		A synonym for CHAR_LENGTH()
+CONCAT_WS()				Returns concatenate with separator
+CONCAT()				Returns concatenated string
+CONV()					Converts numbers between different number bases
+FORMAT()				Returns a number formatted to specified number of decimal places
+HEX()					Returns a string representation of a hex value
+INSERT()				Inserts a substring at the specified position up to the specified number of characters
+INSTR()					Returns the index of the first occurrence of substring
+LCASE()					Synonym for LOWER()
+LEFT()					Returns the leftmost number of characters as specified
+LENGTH()				Returns the length of a string in bytes
+LOWER()					Returns the argument in lowercase
+LPAD()					Returns the string argument, left-padded with the specified string
+LTRIM()					Removes leading spaces
+MID()					Returns a substring starting from the specified position
+OCT()					Returns a string representation of the octal argument
+REGEXP					Pattern matching using regular expressions
+REPEAT()				Repeats a string the specified number of times
+REPLACE()				Replaces occurrences of a specified string
+REVERSE()				Reverses the characters in a string
+RIGHT()					Returns the specified rightmost number of characters
+RPAD()					Appends string the specified number of times
+RTRIM()					Removes trailing spaces
+SPACE()					Returns a string of the specified number of spaces
+STRCMP()				ompares two strings
+SUBSTRING_INDEX()		Returns a substring from a string before the specified number of occurrences of the delimiter
+SUBSTRING(), SUBSTR()	Returns the substring as specified
+TRIM()					Removes leading and trailing spaces
+UPPER()					Converts to uppercase
+
+2. List all the DATE functions & their usage in tabular form
+
+ADDDATE()								Adds dates
+ADDTIME()								Adds time
+CURDATE()								Returns the current date
+CURTIME()								Returns the current time
+DATE_ADD()								Adds two dates
+DATE_FORMAT()							Formats date as specified
+DATE_SUB()								Subtracts two dates
+DATE()									Extracts the date part of a date or datetime expression
+DATEDIFF()								Subtracts two dates
+DAY()									Synonym for DAYOFMONTH()
+DAYNAME()								Returns the name of the weekday
+DAYOFMONTH()							Returns the day of the month (1-31)
+DAYOFWEEK()								Returns the weekday index of the argument
+DAYOFYEAR()								Returns the day of the year (1-366)
+EXTRACT									Extracts part of a date
+FROM_DAYS()								Converts a day number to a date
+HOUR()									Extracts the hour
+LAST_DAY								Returns the last day of the month for the argument
+MAKEDATE()								Creates a date from the year and day of year
+MAKETIME								MAKETIME()
+MICROSECOND()							Returns the microseconds from argument
+MINUTE()								Returns the minute from the argument
+MONTH()									Return the month from the date passed
+MONTHNAME()								Returns the name of the month
+NOW()									Returns the current date and time
+SEC_TO_TIME()							Converts seconds to 'HH:MM:SS' format
+SECOND()								Returns the second (0-59)
+STR_TO_DATE()							Converts a string to a date
+SUBDATE()								When invoked with three arguments a synonym for DATE_SUB()
+SUBTIME()								Subtracts times
+SYSDATE()								Returns the time at which the function executes
+TIME_FORMAT()							Formats as time
+TIME_TO_SEC()							Returns the argument converted to seconds
+TIME()									Extracts the time portion of the expression passed
+TIMEDIFF()								Subtracts time
+TIMESTAMP()								With a single argument, this function returns the date or datetime expression. With two arguments, the sum of the arguments
+TIMESTAMPADD()							Adds an interval to a datetime expression
+TIMESTAMPDIFF()							Subtracts an interval from a datetime expression
+TO_DAYS()								Returns the date argument converted to days
+UTC_DATE()								Returns the current UTC date
+UTC_TIME()								Returns the current UTC time
+UTC_TIMESTAMP()							Returns the current UTC date and time
+WEEK()									Returns the week number
+WEEKDAY()								Returns the weekday index
+WEEKOFYEAR()							Returns the calendar week of the date (1-53)
+YEAR()									Returns the year
+YEARWEEK()								Returns the year and week
+
